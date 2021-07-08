@@ -1,5 +1,8 @@
 package com.example.swaggerdemo.dto;
 
+/**
+ * Order 정보 응답용 DTO
+ */
 public class OrderResponse {
     private String id = null;
     private int quantity = 0;

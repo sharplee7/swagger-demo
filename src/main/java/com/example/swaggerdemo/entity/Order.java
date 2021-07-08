@@ -1,5 +1,8 @@
 package com.example.swaggerdemo.entity;
 
+/**
+ * Order Entity
+ */
 public class Order {
     private String id = null;
     private int quantity = 0;

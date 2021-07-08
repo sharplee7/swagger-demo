@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * RDBMS를 대체하기 위해 만든 임시 메모리 데이터 저장소
+ */
 public class OrderDB {
     private static OrderDB orderDB = null;
     private Map<String, Order> persistence = new ConcurrentHashMap<String, Order>();
