@@ -14,7 +14,9 @@ public class OrderDB {
     private Map<String, Order> persistence = new ConcurrentHashMap<String, Order>();
 
     static public OrderDB getInstance() {
-        if (orderDB == null) orderDB = new OrderDB();
+        if (orderDB == null) {
+            orderDB = new OrderDB();
+        }
         return orderDB;
     }
 

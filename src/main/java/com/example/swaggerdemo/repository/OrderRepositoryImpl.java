@@ -25,9 +25,7 @@ public class OrderRepositoryImpl implements OrderRepository {
 
     @Override
     public int delete(String id) {
-        if (findById(id) != null) {
-            return 0; // 삭제할게 없다면 에러처리
-        }
+        if (findById(id) == null) return 0; // 삭제할게 없다면 에러처리
 
         return persistence.delete(id);
     }

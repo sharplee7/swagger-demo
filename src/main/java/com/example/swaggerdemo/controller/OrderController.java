@@ -15,16 +15,21 @@ import java.util.List;
 public class OrderController {
     @Autowired
     OrderService orderService;
+    // DTO to Entity, Entity to DTO를 위해 ModelMapper 사용
+    ModelMapper modelMapper = new ModelMapper();
 
     @PostMapping("/order")
     public int saveOrder(@RequestBody OrderRequest orderRequest) {
-        Order order = new Order();
-        order.setId(orderRequest.getId());
-        order.setQuantity(orderRequest.getQuantity());
-        order.setStatus("order");
-        order.setComplete(false);
-
+        // ModelMapper를 이용해 OrderRequest DTO의 값을 Order Entity로 복사한다.
+        Order order = modelMapper.map(orderRequest, Order.class);
         return orderService.save(order);
+    }
+
+    @PutMapping("/order")
+    public int changeOrder(@RequestBody OrderRequest orderRequest) {
+        // ModelMapper를 이용해 OrderRequest DTO의 값을 Order Entity로 복사한다.
+        Order order = modelMapper.map(orderRequest, Order.class);
+        return orderService.modify(order);
     }
 
     @DeleteMapping("/order/{id}")
@@ -34,21 +39,16 @@ public class OrderController {
 
     @GetMapping("/order/{id}")
     public OrderResponse getOrder(@PathVariable String id) {
-        OrderResponse orderResponse = new OrderResponse();
         Order order = orderService.findById(id);
-
-        orderResponse.setId(order.getId());
-        orderResponse.setQuantity(order.getQuantity());
-        orderResponse.setStatus(order.getStatus());
-        orderResponse.setDate(order.getDate());
-        orderResponse.setComplete(order.isComplete());
+        // ModelMapper를 이용해 order entity의 값을 OrderResponse DTO로 변환한다.
+        OrderResponse orderResponse = modelMapper.map(order, OrderResponse.class);
 
         return orderResponse;
     }
 
     @GetMapping("/order")
     public List<OrderResponse> getOrders() {
-        ModelMapper modelMapper = new ModelMapper();
+        // Persistence에서 List<Order>로 생성된 Entity 리스트를 화면으로 전달하기 위해 List<OrderResponse>로 변환
         List<OrderResponse> postDtoList = Arrays.asList(modelMapper.map(orderService.findAll(), OrderResponse[].class));
         return postDtoList;
     }
