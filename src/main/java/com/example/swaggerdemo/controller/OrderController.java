@@ -8,6 +8,8 @@ import io.swagger.annotations.ApiOperation;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletResponse;
 import java.util.Arrays;
 import java.util.List;
 
@@ -56,5 +58,10 @@ public class OrderController {
         // Persistence에서 List<Order>로 생성된 Entity 리스트를 화면으로 전달하기 위해 List<OrderResponse>로 변환
         List<OrderResponse> postDtoList = Arrays.asList(modelMapper.map(orderService.findAll(), OrderResponse[].class));
         return postDtoList;
+    }
+
+    @GetMapping("/")
+    public void toSwagger(HttpServletResponse httpServletResponse) throws Exception {
+        httpServletResponse.sendRedirect("/swagger-ui.html");
     }
 }

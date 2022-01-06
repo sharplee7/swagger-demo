@@ -18,6 +18,12 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
 	implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.8'
 
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop
+	implementation 'org.springframework.boot:spring-boot-starter-aop:2.6.1'
+
+	// convert log message to json format in order to read in logstash
+	implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '6.3'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

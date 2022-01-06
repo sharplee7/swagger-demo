@@ -1,0 +1,45 @@
+Starting SwaggerDemoApplication using Java 11.0.12 on EuiDeokui-MacBookPro.local with PID 30220 (/Users/euideoklee/java-dev/workspace/swagger-demo/build/classes/java/main started by euideoklee in /Users/euideoklee/java-dev/workspace/swagger-demo)
+The following profiles are active: local
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.48]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1068 ms
+Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+Starting ProtocolHandler ["http-nio-8080"]
+Tomcat started on port(s): 8080 (http) with context path ''
+Context refreshed
+Found 1 custom documentation plugin(s)
+Scanning for api listing references
+Started SwaggerDemoApplication in 2.387 seconds (JVM running for 2.752)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+{"timestamp":"2021-12-31 14:26:56.439","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.save","type":"SERVICE_REQ","parameter":"[{\"id\":\"3333\",\"quantity\":33,\"date\":null,\"status\":\"333333333\",\"complete\":false}]"}
+{"timestamp":"2021-12-31 14:27:03.635","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.save","type":"SERVICE_REQ","parameter":"[{\"id\":\"4444\",\"quantity\":444,\"date\":null,\"status\":\"444444\",\"complete\":false}]"}
+{"timestamp":"2021-12-31 14:27:09.851","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.save","type":"SERVICE_REQ","parameter":"[{\"id\":\"1111\",\"quantity\":111,\"date\":null,\"status\":\"11111111\",\"complete\":false}]"}
+{"timestamp":"2021-12-31 14:27:40.966","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:41.165","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:41.298","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:41.479","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:41.637","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:41.782","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:41.951","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:42.108","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:42.265","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:42.398","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:42.556","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:27:42.711","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:30.172","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:30.347","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:30.540","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:30.732","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:30.878","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:31.057","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:31.205","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:31.373","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:31.528","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:31.674","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:31.832","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
+{"timestamp":"2021-12-31 14:38:31.977","hostname":"EuiDeokui-MacBookPro.local","hostIp":"127.0.0.1","clientIp":"","clientUrl":"","callFunction":"com.example.swaggerdemo.sevice.OrderServiceImpl.findById","type":"SERVICE_REQ","parameter":"[\"1111\"]"}
